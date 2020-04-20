@@ -19,7 +19,7 @@ public class DemoController {
 		widgetList.add(new Widget(ItemList));
 	}
 
-	@RequestMapping(value = "/")
+	@RequestMapping(value = "/", produces = "application/json;charset=UTF-8")
 	public Widget widget (){
 		return this.widgetList.get(0);
 	}
